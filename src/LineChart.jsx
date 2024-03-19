@@ -2,10 +2,7 @@
 import { LineChart as Lchart, Line, XAxis, YAxis, Tooltip } from 'recharts';
 
 import React, { PureComponent } from 'react';
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer,BarChart, Bar } from 'recharts';
-
-
-
+import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
 
 
 const LineChart = () => {
@@ -32,15 +29,9 @@ const LineChart = () => {
             <Tooltip></Tooltip>
           </Lchart>
 
-          <PieChart width={400} height={400}>
-            <Pie data={studentData} dataKey="mathMark" cx="50%" cy="50%" outerRadius={60} fill="#8884d8"></Pie>
+          <PieChart width={400} height={400} data={studentData}>
+            <Pie dataKey="mathMark" cx="50%" cy="50%" outerRadius={60} fill="#8884d8"></Pie>
           </PieChart>
-
-
-          <BarChart width={400} height={400} data={studentData}>
-            <Bar dataKey={mathMark}></Bar>
-
-          </BarChart>
         </div>
     );
 };
