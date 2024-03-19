@@ -1,12 +1,11 @@
 
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Actor from './Actor'
 import Singer from './Singer'
 import Books from './Books'
 import Counter from './Counter'
 import Team from './Team'
+import LineChart from './LineChart'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -37,6 +36,7 @@ function App() {
   return (
     <>
 
+    <LineChart></LineChart>
     <Team></Team>
     <Counter></Counter>
     <button onClick={()=>addToFive(5)}>Add 5</button>
